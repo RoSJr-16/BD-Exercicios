@@ -36,7 +36,28 @@ insert into livros
 ('A hora da Estrela', 73682920, 'Clarice Lispector', 'Cia das Letras', 'Poesia', 92),
 ('Meu livro de cordel', 72879012, 'Cora Coralina', 'Saraiva', 'Poesia', 123),
 ('A descoberta do mundo', 98920212, 'Clarice Lispector', 'Saraiva', 'Romance', 321),
-('Ou isto ou aquilo', '73928923', 'Cecília Meirelles', 'Ática', 'Poesia', 122);
+('Ou isto ou aquilo', 73928923, 'Cecília Meirelles', 'Ática', 'Poesia', 122);
 
 select * from livros;
 select * from autores;
+
+UPDATE autores
+set autorNome = 'Carlos Drummond de Andrade'
+where id_autor = 1;
+
+
+--Cora Coralina--
+SELECT * FROM livros
+WHERE Autor like 'Cora Coralina%'; 
+
+--Numero de pagina--
+SELECT * FROM livros
+WHERE Nº_de_páginas>200 and Nº_de_páginas<300;
+
+--livros O--
+SELECT * FROM livros
+WHERE NomeLivro like 'O%';
+
+--livros romance--
+SELECT * FROM livros 
+WHERE Gênero like 'Romance%';
