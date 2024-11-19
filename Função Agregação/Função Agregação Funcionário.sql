@@ -63,5 +63,43 @@ select sum(Salário) from tbFuncional;
 select sum(Tempo_empresa) from tbFuncional;
 select sum(Tempo_cargo) from tbFuncional;
 
--- MAIOR E MENOR (7 - 15)
+-- MAIOR E MENOR (7 - 18)
+select MAX (codfunc) from tbFunc;
+select MIN (codfunc) from tbFunc;
+select MAX (Idade) from tbFunc;
+select MIN (Idade) from tbFunc;
+select MAX (Qtde_filhos) from tbFunc;
+select MIN (Qtde_filhos) from tbFunc;
+select MAX (Salário) from tbFuncional;
+select MIN (Salário) from tbFuncional;
+select MAX (Tempo_empresa) from tbFuncional;
+select MIN (Tempo_empresa) from tbFuncional;
+select MAX (Tempo_cargo) from tbFuncional;
+select MIN (Tempo_cargo) from tbFuncional;
 
+--MEDIA (19 - 24)
+select AVG (codfunc) from tbFuncional;
+select AVG (Idade) from tbFunc;
+select AVG (Qtde_filhos) from tbFunc;
+select AVG (Salário) from tbFuncional;
+select AVG (Tempo_empresa) from tbFuncional;
+select AVG (Tempo_cargo) from tbFuncional;
+
+--QUANTIDADE (25 - 30)
+select COUNT (Salário) from tbFuncional
+WHERE Salário > 800;
+
+select COUNT (Salário) from tbFuncional
+WHERE Salário > 1000;
+
+select COUNT (Salário) from tbFuncional
+WHERE Salário < 400;
+
+select COUNT (Salário) from tbFuncional
+WHERE Salário < 2000;
+
+select COUNT (Salário) from tbFuncional
+WHERE Salário > 8000;
+
+select COUNT (Salário) from tbFuncional
+WHERE Salário < 1000;
